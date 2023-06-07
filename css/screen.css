@@ -209,8 +209,10 @@ h1 {
     height: auto;
 }
 html, body, .container, .cbp-fbscroller, .cbp-fbscroller section {
-    height: 100%}
+    height: 100%
+}
 .cbp-fbscroller section {
+    background: #fafafa;
     position: relative;
     background-position: top center;
     background-repeat: no-repeat;
@@ -230,17 +232,6 @@ html, body, .container, .cbp-fbscroller, .cbp-fbscroller section {
     -o-background-size: cover;
     background-size: cover;
 }
-#fbsection2 {
-    background: url(../img/texture.jpg) no-repeat right;
-    background-size: auto 100%}
-
-#fbsection4, #fbsection5 {
-    background: #fafafa;
-}
-#fbsection6 {
-    background: url(../img/contact-bg.jpg) no-repeat right;
-    background-size: auto 100%
-    }
 
 /******* Preview Effect *********/
     
@@ -288,11 +279,11 @@ html, body, .container, .cbp-fbscroller, .cbp-fbscroller section {
     overflow: hidden;
     color: black;
     max-width: 100%;
-    -webkit-animation: loading 5s;
-    -moz-animation: loading 5s;
-    -o-animation: loading 5s;
-    -ms-animation: loading 5s;
-    animation: loading 5s;
+    -webkit-animation: loading 2s;
+    -moz-animation: loading 2s;
+    -o-animation: loading 2s;
+    -ms-animation: loading 2s;
+    animation: loading 2s;
 }
 
 /******* Menu *********/
@@ -1250,98 +1241,111 @@ to {
     height: 100%;
     overflow: hidden;
 }
-.bl-main>section {
+.bl-main>div {
     position: absolute;
     width: 33.23%;
     height: 33.2%
     }
-.bl-main>section:first-child {
+#plan{
+    background: url(../img/models/plan_wesela.png) no-repeat center !important;
+    background-size: contain !important
+}
+#menu{
+    background: url(../img/models/menu.png) no-repeat center !important;
+    background-size: contain !important;
+}
+.bl-main>div.single {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.bl-main>div:first-child {
     top: 0;
     left: 0;
     background: url(../img/models/1.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main>section:nth-child(2) {
+.bl-main>div:nth-child(2) {
     top: 0;
     left: 33.3%;
     background: url(../img/models/2.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main>section:nth-child(3) {
+.bl-main>div:nth-child(3) {
     top: 0;
     left: 66.6%;
     background: url(../img/models/3.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main>section:nth-child(4) {
+.bl-main>div:nth-child(4) {
     top: 33.3%;
     left: 0;
     background: url(../img/models/4.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main>section:nth-child(5) {
+.bl-main>div:nth-child(5) {
     top: 33.3%;
     left: 33.3%;
     background: url(../img/models/5.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main>section:nth-child(6) {
+.bl-main>div:nth-child(6) {
     top: 33.3%;
     left: 66.6%;
     background: url(../img/models/6.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main>section:nth-child(7) {
+.bl-main>div:nth-child(7) {
     top: 66.6%;
     left: 0;
     background: url(../img/models/7.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main>section:nth-child(8) {
+.bl-main>div:nth-child(8) {
     top: 66.6%;
     left: 33.3%;
     background: url(../img/models/8.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main>section:nth-child(9) {
+.bl-main>div:nth-child(9) {
     top: 66.6%;
     left: 66.6%;
     background: url(../img/models/9.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main2>section:first-child {
+.bl-main2>div:first-child {
     background: url(../img/graphics/1.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main2>section:nth-child(2) {
+.bl-main2>div:nth-child(2) {
     background: url(../img/graphics/2.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main2>section:nth-child(3) {
+.bl-main2>div:nth-child(3) {
     background: url(../img/graphics/3.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main2>section:nth-child(4) {
+.bl-main2>div:nth-child(4) {
     background: url(../img/graphics/4.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main2>section:nth-child(5) {
+.bl-main2>div:nth-child(5) {
     background: url(../img/graphics/5.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main2>section:nth-child(6) {
+.bl-main2>div:nth-child(6) {
     background: url(../img/graphics/6.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main2>section:nth-child(7) {
+.bl-main2>div:nth-child(7) {
     background: url(../img/graphics/7.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main2>section:nth-child(8) {
+.bl-main2>div:nth-child(8) {
     background: url(../img/graphics/8.jpg) no-repeat center;
     background-size: cover;
 }
-.bl-main2>section:nth-child(9) {
+.bl-main2>div:nth-child(9) {
     background: url(../img/graphics/9.jpg) no-repeat center;
     background-size: cover;
 }
@@ -1607,23 +1611,20 @@ to {
     .services .service-detail2 {
 	margin-left:1%;
 }
-    #fbsection4, #fbsection5 {
-        background: #000;
-        height: 1763px;
-    }
-    #fbsection3 {
-        height: 950px;
-    }
-    #fbsection2 {
-        height: 950px;
-    }
 
     .project-title {
         font-size: 13px;
     }
-    .bl-main>section {
+    .bl-main>div {
         width: 100% !important;
         height: 196px !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+    }
+    .bl-main>div.single {
+        width: 100% !important;
+        height: 100% !important;
         position: relative !important;
         top: auto !important;
         left: auto !important;
@@ -1900,3 +1901,65 @@ to {
 .grid-1-5 {
     width: 21.971056%}
 }
+
+.timeline {
+    position: relative;
+    margin: 20px auto;
+    width: 80%; /* Adjust the width as desired */
+  }
+  
+  .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px; /* Adjust the line width as desired */
+    height: 100%; /* Adjust the line height as desired */
+    background-color: #000;
+  }
+  
+  .timeline-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px; /* Adjust the vertical spacing between items */
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: 1;
+  }
+  
+  .timeline-content {
+    margin: 0 20px;
+    flex-grow: 1;
+  }
+  
+  .timeline-content h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .timeline-content p {
+    margin: 10px 0;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content {
+    text-align: right;
+    margin-left: auto;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content h2 {
+    text-align: right;
+  }
+  
+  /* Adjust the styling as per your requirements */
+  

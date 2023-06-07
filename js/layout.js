@@ -103,7 +103,12 @@ var cbpFixedScrollLayout = (function () {
     }
     function b(e) {
         a.$navlinks.eq(a.currentLink).removeClass("cbp-fbcurrent");
-        a.currentLink = e.index("section"); a.$navlinks.eq(a.currentLink).addClass("cbp-fbcurrent")
+        a.currentLink = e.index("section");
+        if(a.currentLink > 3){
+            a.$navlinks.eq(3).addClass("cbp-fbcurrent");
+        } else {
+            a.$navlinks.eq(a.currentLink).addClass("cbp-fbcurrent");
+        }
     }
     function c(e) {
         a.$body.stop().animate({ scrollTop: e },

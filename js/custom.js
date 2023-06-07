@@ -34,7 +34,7 @@ $(document).ready(function () {
 $(function () { cbpFixedScrollLayout.init(); });
 $(window).load(function () {
     "use strict";
-    $(".modal").delay(5000).fadeOut(1000);
+    $(".modal").delay(1).fadeOut(1000);
 });
 $('nav > a').click(function () {
     $('nav > a').removeClass("cbp-fbcurrent");
