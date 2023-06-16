@@ -372,6 +372,20 @@ html, body, .container, .cbp-fbscroller, .cbp-fbscroller section {
     color: #000;
 }
 
+#spiewnik{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 /******* About *********/
 
 ul.about-data li {
@@ -382,8 +396,8 @@ ul.about-data li {
 }
 ul.about-data li span.value {
     width: 68%;
-    text-align: right;
-    float: right;
+    text-align: left;
+    float: left;
 }
 ul.about-data li i {
     margin-right:10px;

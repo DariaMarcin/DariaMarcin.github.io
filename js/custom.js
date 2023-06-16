@@ -45,6 +45,10 @@ $('.tablet-close').click(function (e) {
     $('.menu').toggleClass('no-collapse').toggleClass('collapse'); e.preventDefault();
 });
 
+$('.force-close').click(function (e) {
+    $('.menu').toggleClass('no-collapse').toggleClass('collapse'); e.preventDefault();
+});
+
 /**** the jScrollPane script ****/
 
 (function ($) {
